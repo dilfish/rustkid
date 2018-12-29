@@ -1,0 +1,2 @@
+# rustkid
+learn rust
