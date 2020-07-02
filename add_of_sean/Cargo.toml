@@ -1,9 +1,0 @@
-[package]
-name = "adder_of_sean"
-version = "0.1.0"
-authors = ["SeanZH <zhponly@gmail.com>"]
-edition = "2018"
-description = "Just hello world."
-license = "MIT OR Apache-2.0"
-
-[dependencies]
