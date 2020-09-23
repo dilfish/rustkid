@@ -2,6 +2,8 @@
 // learn rust for lifetime
 // 20200923
 
+// ref: http://troubles.md/why-phantomdata/
+
 // XXX this file could not compile
 // if we added unsafe prefix to take_static and all other needed
 // it will compile but give us a bad result
