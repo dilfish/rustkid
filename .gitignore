@@ -12,3 +12,4 @@ Cargo.lock
 
 # binary file
 main
+target
