@@ -1,4 +1,7 @@
-use std::ops::Deref;
+// sean at shanghai
+
+
+// use std::ops::Deref;
 use std::mem::drop;
 
 
@@ -35,22 +38,22 @@ fn main() {
 // are a slightly different way of declaring a generic
 // parameter, but you don’t need to worry about them
 // for now; we’ll cover them in more detail in Chapter 19.
-impl<T> Deref for MyBox<T> {
-    type Target = T;
+// impl<T> Deref for MyBox<T> {
+    // type Target = T;
 
-    fn deref(&self) -> &T {
-        &self.0
-    }
-}
+    // fn deref(&self) -> &T {
+        // &self.0
+    // }
+// }
 
 
-struct MyBox<T>(T);
+// struct MyBox<T>(T);
 
-impl<T> MyBox<T> {
-    fn new(x: T) -> MyBox<T> {
-        MyBox(x)
-    }
-}
+// impl<T> MyBox<T> {
+    // fn new(x: T) -> MyBox<T> {
+        // MyBox(x)
+    // }
+// }
 
 
 struct CustomSmartPointer {
@@ -67,6 +70,7 @@ impl Drop for CustomSmartPointer {
 fn main() {
     let c = CustomSmartPointer { data: String::from("my stuff") };
     let d = CustomSmartPointer { data: String::from("other stuff") };
-    // drop(c)
+    drop(c);
+    drop(d);
     println!("CustomSmartPointers created.");
 }

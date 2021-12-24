@@ -1,6 +1,6 @@
 use std::thread;
 use std::time::Duration;
-use std::sync::mpsc;
+// use std::sync::mpsc;
 
 fn main() {
     let handle = thread::spawn(|| {
@@ -16,6 +16,6 @@ fn main() {
     }
 
     handle.join().unwrap();
-    let (tx, rx) = mpsc::channel();
-
+    // let (tx, rx) = mpsc::channel();
+    println!("exit")
 }
